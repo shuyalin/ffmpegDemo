@@ -1,0 +1,14 @@
+prefix=/home/brian/work_dir/ffmpegDemo/ffmpeg-3.4.8/tmp
+exec_prefix=${prefix}
+libdir=/home/brian/work_dir/ffmpegDemo/ffmpeg-3.4.8/tmp/lib
+includedir=/home/brian/work_dir/ffmpegDemo/ffmpeg-3.4.8/tmp/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 55.78.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -lm
+Cflags: -I${includedir}

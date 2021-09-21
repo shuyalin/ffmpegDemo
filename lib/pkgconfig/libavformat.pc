@@ -1,0 +1,14 @@
+prefix=/home/brian/work_dir/ffmpegDemo/ffmpeg-3.4.8/tmp
+exec_prefix=${prefix}
+libdir=/home/brian/work_dir/ffmpegDemo/ffmpeg-3.4.8/tmp/lib
+includedir=/home/brian/work_dir/ffmpegDemo/ffmpeg-3.4.8/tmp/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 57.83.100
+Requires: 
+Requires.private: libavcodec >= 57.107.100, libswresample >= 2.9.100, libavutil >= 55.78.100
+Conflicts:
+Libs: -L${libdir}  -lavformat 
+Libs.private: -lxcb -lxcb-shm -lxcb-xfixes -lxcb-shape -lm -ldl -lz -pthread -pthread
+Cflags: -I${includedir}
