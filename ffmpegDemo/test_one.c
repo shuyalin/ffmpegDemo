@@ -24,6 +24,7 @@ int main()
 	int minutes = context->duration/1000000/60;
 	int seconds = context->duration/1000000%60;
 	printf("%d minute %d second\n",minutes,seconds);
+	av_dump_format(context,0,path,0);
 	
 	return 0;
 }
